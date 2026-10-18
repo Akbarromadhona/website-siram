@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SIRAM membantu kita belajar memilah sampah dan menemukan pupuk organik.">
+  <title>SIRAM — Pupuk dari Rumah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" aria-label="SIRAM beranda">
+        <span class="brand-icon">🌱</span>
+        <span><strong>SIRAM</strong><small>Pupuk dari Rumah</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#beranda">Beranda</a>
+        <a href="#edukasi">Edukasi</a>
+        <a href="#produk">Produk</a>
+        <a class="nav-cta" href="#produk">Pesan Pupuk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> Mulai dari rumah, untuk bumi</span>
+          <h1>Sampah Dipilah,<br><span>Lingkungan Terjaga.</span></h1>
+          <p class="hero-description">Langkah kecil dari rumah bisa membawa perubahan besar. Kenali cara memilah sampah dan manfaatkan sampah organik menjadi sesuatu yang berguna.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#edukasi">Mulai Edukasi <span>→</span></a>
+            <a class="button button-outline" href="#produk">Lihat Produk</a>
+          </div>
+          <div class="hero-note"><span>✓</span> Pilah dengan benar · Olah dengan bijak · Bumi lebih baik</div>
+        </div>
+        <div class="hero-art" aria-label="Ilustrasi tanaman dan bumi">
+          <div class="sun"></div>
+          <div class="art-leaf leaf-one"></div>
+          <div class="art-leaf leaf-two"></div>
+          <div class="plant-pot"><div class="plant-stem"></div><div class="plant-leaf leaf-left"></div><div class="plant-leaf leaf-right"></div><div class="plant-leaf leaf-top"></div></div>
+          <div class="soil"></div>
+          <div class="art-label"><span>♻</span><div><strong>Mulai dari hal kecil</strong><small>Kurangi sampah setiap hari</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-info">
+      <div class="container info-grid">
+        <article class="info-item"><span class="info-icon">♻️</span><div><h3>Pilah Sampah</h3><p>Kenali jenis sampah dari rumah.</p></div></article>
+        <article class="info-item"><span class="info-icon">🌿</span><div><h3>Manfaatkan Organik</h3><p>Ubah sisa dapur menjadi manfaat.</p></div></article>
+        <article class="info-item"><span class="info-icon">🪴</span><div><h3>Dukung Bumi</h3><p>Pilih kebiasaan yang lebih lestari.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section education-section" id="edukasi">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Belajar bersama SIRAM</span>
+          <h2>Mulai dari <span>memilah sampah</span></h2>
+          <p>Memilah sampah adalah langkah awal agar sampah lebih mudah ditangani dan dimanfaatkan.</p>
+        </div>
+        <div class="waste-grid">
+          <article class="waste-card organic">
+            <div class="waste-illustration">🥬 🍌 🍂</div>
+            <div class="waste-content">
+              <span class="tag tag-green">Sampah organik</span>
+              <h3>Berasal dari makhluk hidup</h3>
+              <p>Sampah yang umumnya dapat terurai secara alami, seperti sisa makanan, kulit buah, sayuran, dan daun.</p>
+              <p class="examples"><strong>Contoh:</strong> sisa sayur, kulit buah, daun kering.</p>
+            </div>
+          </article>
+          <article class="waste-card inorganic">
+            <div class="waste-illustration">🥤 🥫 📦</div>
+            <div class="waste-content">
+              <span class="tag tag-blue">Sampah anorganik</span>
+              <h3>Perlu dipilah sesuai bahan</h3>
+              <p>Sampah seperti plastik, kaleng, kaca, dan kertas yang dapat diproses kembali sesuai jenis serta kondisinya.</p>
+              <p class="examples"><strong>Contoh:</strong> botol plastik, kaleng, kardus bersih.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="quiz-panel">
+          <div class="quiz-intro">
+            <span class="quiz-icon">💡</span>
+            <div><span class="eyebrow">Kuis singkat</span><h3>Seberapa paham kamu?</h3><p>Jawab satu pertanyaan untuk menguji pengetahuanmu.</p></div>
+          </div>
+          <div class="quiz-content">
+            <p class="quiz-question" id="quizQuestion">Kulit pisang termasuk jenis sampah apa?</p>
+            <div class="quiz-options" id="quizOptions">
+              <button class="quiz-option" data-answer="wrong">Anorganik</button>
+              <button class="quiz-option" data-answer="correct">Organik</button>
+              <button class="quiz-option" data-answer="wrong">Limbah elektronik</button>
+            </div>
+            <p class="quiz-feedback" id="quizFeedback" aria-live="polite">Pilih jawabanmu di atas.</p>
+            <button class="text-button" id="nextQuestion">Pertanyaan berikutnya →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="produk">
+      <div class="container">
+        <div class="section-heading product-heading">
+          <span class="eyebrow">Marketplace SIRAM</span>
+          <h2>Rawat tanaman dengan <span>pupuk organik</span></h2>
+          <p>Pilih produk yang kamu butuhkan, lalu lanjutkan pemesanan melalui WhatsApp.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image liquid-image"><span class="product-sticker">Pilihan</span><div class="bottle"><div class="bottle-cap"></div><div class="bottle-label"><span>🌱</span><strong>SIRAM</strong><small>PUPUK CAIR</small></div></div></div>
+            <div class="product-details"><span class="product-category">Pupuk cair</span><h3>Pupuk Cair Organik</h3><p>Cocok untuk perawatan berbagai jenis tanaman.</p><div class="product-bottom"><strong class="price">Rp25.000</strong><button class="button button-small order-button" data-product="Pupuk Cair Organik" data-price="25000">Pesan <span>↗</span></button></div></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image solid-image"><div class="fertilizer-bag"><span>🌿</span><strong>SIRAM</strong><small>PUPUK ORGANIK</small></div></div>
+            <div class="product-details"><span class="product-category">Pupuk padat</span><h3>Pupuk Padat Organik</h3><p>Membantu menambah bahan organik pada tanah.</p><div class="product-bottom"><strong class="price">Rp20.000</strong><button class="button button-small order-button" data-product="Pupuk Padat Organik" data-price="20000">Pesan <span>↗</span></button></div></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image package-image"><div class="bottle mini-bottle"><div class="bottle-cap"></div><div class="bottle-label"><span>🌱</span><strong>SIRAM</strong><small>CAIR</small></div></div><div class="fertilizer-bag mini-bag"><span>🌿</span><strong>SIRAM</strong><small>PADAT</small></div></div>
+            <div class="product-details"><span class="product-category">Paket hemat</span><h3>Paket Hemat SIRAM</h3><p>Kombinasi pupuk cair dan padat untuk kebutuhanmu.</p><div class="product-bottom"><strong class="price">Rp40.000</strong><button class="button button-small order-button" data-product="Paket Hemat SIRAM (Cair + Padat)" data-price="40000">Pesan <span>↗</span></button></div></div>
+          </article>
+        </div>
+        <p class="price-note">Catatan: nama, gambar ilustrasi, dan harga produk dapat disesuaikan dengan produk asli project kamu.</p>
+      </div>
+    </section>
+
+    <section class="contact-banner">
+      <div class="container contact-inner">
+        <div><span class="eyebrow">Ada pertanyaan?</span><h2>Yuk, mulai kebiasaan baik bersama SIRAM.</h2><p>Hubungi kami untuk bertanya tentang produk atau cara pemesanan.</p></div>
+        <a class="button whatsapp-button" id="contactWhatsApp" href="#" target="_blank" rel="noopener">☏ Hubungi via WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#beranda"><span class="brand-icon">🌱</span><span><strong>SIRAM</strong><small>Pupuk dari Rumah</small></span></a>
+      <p>Langkah kecil untuk lingkungan yang lebih baik.</p>
+      <span class="copyright">© <span id="year"></span> SIRAM · Project ramah lingkungan</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
